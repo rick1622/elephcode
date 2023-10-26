@@ -1,7 +1,9 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('node:path')
+
 //自动更新
-require('update-electron-app')()
+const { updateElectronApp } = require('update-electron-app')
+updateElectronApp()
 
 console.log(process.env.CERTIFICATE_PASSWORD);// 唯一证书
 console.log(process.env.GITHUB_TOKEN);// github自动发布秘钥

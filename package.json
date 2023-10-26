@@ -1,6 +1,7 @@
 {
-  "name": "elephcode",
-  "version": "1.0.0",
+  "name": "elephcode_electron",
+  "__comment": "发布自动更新的话需要修改这里的版本号",
+  "version": "1.0.2",
   "description": "This is a code automatically create system and with powerful apipost tool system",
   "main": "main.js",
   "scripts": {
