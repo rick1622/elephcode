@@ -1,0 +1,35 @@
+{
+  "name": "elephcode",
+  "version": "1.0.0",
+  "description": "This is a code automatically create system and with powerful apipost tool system",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rick1622/elephcode.git"
+  },
+  "author": "rick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rick1622/elephcode/issues"
+  },
+  "homepage": "https://github.com/rick1622/elephcode#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "electron": "^27.0.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
