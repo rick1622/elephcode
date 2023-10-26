@@ -1,14 +1,14 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('node:path')
-const process = require('process')
+//自动更新
+require('update-electron-app')()
 
-
-console.log(Object.keys(process.env));
+console.log(process.env.CERTIFICATE_PASSWORD);// 唯一证书
+console.log(process.env.GITHUB_TOKEN);// github自动发布秘钥
 
 app.whenReady().then(() => {
     ipcMain.handle('ping', () => 'hello this is ping')
     createWindow()
-    console.log(process.env.CERTIFICATE_PASSWORD);
 
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) {

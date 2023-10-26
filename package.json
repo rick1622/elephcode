@@ -8,18 +8,19 @@
     "dev": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rick1622/elephcode.git"
+    "url": "git+https://github.com/rick1622/elephcode_electron.git"
   },
   "author": "rick",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rick1622/elephcode/issues"
+    "url": "https://github.com/rick1622/elephcode_electron/issues"
   },
-  "homepage": "https://github.com/rick1622/elephcode#readme",
+  "homepage": "https://github.com/rick1622/elephcode_electron#readme",
   "devDependencies": {
     "@electron-forge/cli": "^6.4.2",
     "@electron-forge/maker-deb": "^6.4.2",
@@ -27,9 +28,11 @@
     "@electron-forge/maker-squirrel": "^6.4.2",
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "@electron-forge/publisher-github": "^6.4.2",
     "electron": "^27.0.2"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^3.0.0"
   }
 }
